@@ -20,8 +20,12 @@ def index():
         x = (m+1)//0.62
         y = n//1.84
         z = x*y
- 
-    return render_template("view.html", x=x, y=y, z=z)
+    else:
+        x = "等一下"
+        y = "等一下"
+        z = "等一下"
+
+    return render_template("view.html", form=form, x=x, y=y, z=z)
 
 
 if __name__ == '__main__': app.run(debug=True)
