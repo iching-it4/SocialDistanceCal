@@ -17,14 +17,14 @@ def index():
     if request.method == 'POST' and form.validate():
         m = form.m.data
         n = form.n.data
-        x = (m*100+1)//184
-        y = (n*100+1)//62
+        x = (m*100+100)//184
+        y = (n*100+100)//62
         z = x*y
-        a = (m*100+1)//74
-        b = (m*100+1)//45
+        a = (m*100+100)//75
+        b = (m*100+100)//46
         c = a*b
-        d = (m*100+1)//59
-        e = (m*100+1)//45
+        d = (m*100+100)//60
+        e = (m*100+100)//46
         f = d*e
         
     else:
