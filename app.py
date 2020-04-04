@@ -17,8 +17,8 @@ def index():
     if request.method == 'POST' and form.validate():
         m = form.m.data
         n = form.n.data
-        x = (m*100+150)//335
-        y = (n*100+150)//213
+        x = (m*100+150)//334
+        y = (n*100+150)//212
         z = x*y
         a = (m*100+150)//225
         b = (m*100+150)//196
