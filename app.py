@@ -37,7 +37,7 @@ def index():
         d = "__"       
         e = "__"
         f = "__"  
-    return render_template("OUOU.html", form=form, x=x, y=y, z=z,
+    return render_template("OuOu.html", form=form, x=x, y=y, z=z,
                            a=a, b=b, c=c, d=d, e=e,f=f)
 
 
