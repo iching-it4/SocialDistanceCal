@@ -17,15 +17,28 @@ def index():
     if request.method == 'POST' and form.validate():
         m = form.m.data
         n = form.n.data
-        x = (m+1)//0.62
-        y = n//1.84
+        x = (m*100+1)//184
+        y = (n*100+1)//62
         z = x*y
+        a = (m*100+1)//74
+        b = (m*100+1)//45
+        c = a*b
+        d = (m*100+1)//59
+        e = (m*100+1)//45
+        f = d*e
+        
     else:
-        x = "等一下"
-        y = "等一下"
-        z = "等一下"
-
-    return render_template("view.html", form=form, x=x, y=y, z=z)
+        x = "__"
+        y = "__"
+        z = "__"
+        a = "__"
+        b = "__"
+        c = "__"
+        d = "__"       
+        e = "__"
+        f = "__"  
+    return render_template("OUOU.html", form=form, x=x, y=y, z=z,
+                           a=a, b=b, c=c, d=d, e=e,f=f)
 
 
 if __name__ == '__main__': app.run(debug=True)
